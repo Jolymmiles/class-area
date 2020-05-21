@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class AreaTest {
 
     @Test
-    void testgetArea() {
+    void testGetArea() {
         Area area = new Area();
         double expected = 314.1592653589793;
         double actual = Area.getArea(10.0);
@@ -13,7 +13,7 @@ class AreaTest {
         expected = 375;
         actual = Area.getArea(15, 25);
         assertEquals(expected,actual);
-        expected = 7690.618815987814;
+        expected = 2186.548486898496;
         actual = Area.getArea(12.0, 17.0);
         assertEquals(expected,actual);
     }
