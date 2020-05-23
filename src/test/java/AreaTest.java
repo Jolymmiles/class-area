@@ -18,6 +18,7 @@ class AreaTest {
         actual = Math.floor(actual * 100) / 100;
         assertEquals(expected, actual);
         expected = 2186.548486898496;
+        expected = Math.floor(expected * 100) / 100;
         actual = Area.getArea(12.0, 17.0);
         actual = Math.floor(actual * 100) / 100;
         assertEquals(expected, actual);
