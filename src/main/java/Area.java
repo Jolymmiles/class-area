@@ -3,14 +3,24 @@ public class Area {
     }
 
     public static double getArea(double radius) {
-        return Math.PI * Math.pow(radius, 2);
+        if (radius != 0 | radius > 0) {
+            return Math.PI * Math.pow(radius, 2);
+        } else
+            return 0;
     }
 
     public static double getArea(int width, int length) {
-        return width*length;
+        if (width !=0 | length != 0 | width > 0 | length > 0) {
+            return width * length;
+        } else
+            return 0;
     }
 
     public static double getArea(double radius, double height) {
-        return 2 * Math.PI * radius * (height + radius);
+        if (radius != 0 | height !=0 | height > 0 | radius > 0) {
+            return 2 * Math.PI * radius * (height + radius);
+        } else
+            return 0;
+
     }
 }
